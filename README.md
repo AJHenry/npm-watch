@@ -7,11 +7,11 @@ Run scripts from package.json when files change
 ## Installation
 
 ```sh
-npm i npm-watch --save-dev
+npm i watch-npm --save-dev
 ```
 
 ```sh
-yarn add npm-watch -D
+yarn add watch-npm -D
 ```
 
 Add a top-level `"watch"` config to your `package.json` and a "watch" script to
@@ -24,7 +24,7 @@ your `"scripts"`:
   },
   "scripts": {
     "test": "tape test/*.js",
-    "watch": "npm-watch"
+    "watch": "watch-npm"
   }
 }
 ```
@@ -46,8 +46,8 @@ Watching different tasks
     }
   },
   "scripts": {
-    "watch_android": "npm-watch run_android",
-    "watch_ios": "npm-watch run_ios",
+    "watch_android": "watch-npm run_android",
+    "watch_ios": "watch-npm run_ios",
     "run_android": "tns run android --emulator",
     "run_ios": "tns run ios --emulator"
   }
